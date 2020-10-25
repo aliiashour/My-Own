@@ -96,5 +96,13 @@ $(function(){
     
     //Turn on NiceScroll Plugin 
 
-
+    /*
+        $("body").niceScroll({
+            cursorcolor:"#10cab0",
+            cursorwidth:"12px",
+            zindex: 999999, 
+            scrollspeed: 60, 
+            mousescrollstep: 40
+        });
+    */
 })  
