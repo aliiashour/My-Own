@@ -101,6 +101,6 @@ $(function(){
         cursorwidth:"12px",
         zindex: 999999, 
         scrollspeed: 60, 
-        mousescrollstep: 60
+        mousescrollstep: 40
     });
 })  
