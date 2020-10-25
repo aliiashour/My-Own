@@ -1,0 +1,594 @@
+
+
+
+
+/*Start Global*/
+*{
+    padding: 0px ; 
+    margin: 0px ; 
+    box-sizing: border-box ; 
+}
+/*End Global*/
+
+/*Start scrolltop Button    */
+.scrolltop{
+    padding: 15px ;  
+    position: fixed ; 
+    bottom: 30px ; 
+    right: 30px ; 
+    z-index: 99999 ;
+    border-radius: 50% ; 
+    cursor: pointer ; 
+    display: none ; 
+}
+.scrolltop i{
+    color: #FFF ; 
+}
+/*End scrolltop Button    */
+
+/*    Start Tool box    */
+
+.tool{
+    position: fixed;
+    top: 0px ; 
+    left: 0px ; 
+    width: 260px ; 
+    background-color: black; 
+    color: #FFF ; 
+    z-index: 10000 ;
+    height: 100% ;
+    margin-left: -260px ; 
+    padding: 0px 20px 0px;
+}
+.tool .open{
+    position: absolute;
+    top: 80px;
+    right: -26px;
+    padding: 3px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #000;
+    cursor: pointer ; 
+}
+.tool .open:hover i{
+    color: #d8b5b5 ; 
+}
+.tool h3{
+    text-align: right ;
+    padding-right: 15px ; 
+    cursor: pointer ; 
+}
+.tool h3:hover span{
+    color: #d8b5b5 ; 
+}
+
+.tool ul{
+    margin: 0px ; 
+    margin-top: 50px ; 
+    text-align: center ; 
+}
+.tool ul li{
+    display: inline-block ;
+    width: 35px ;
+    height: 35px ; 
+    margin-bottom: 10px ;
+    cursor: pointer ; 
+}
+.tool ul li:not(:last-child){
+    margin-right: 5px ; 
+}
+/*    End Tool box    */
+
+
+
+/*Start Uppernav*/
+
+.uppernav{
+    color: #efe5e5;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 4px 0px ; 
+    position: fixed ;
+    top: 0  ; left: 0 ; right: 0 ; 
+    z-index: 9999 ; 
+}
+.uppernav .work-info{
+    text-align: right  ;
+}
+
+
+.uppernav i{
+    margin-right: 1px ;
+}
+
+/*End Uppernav*/
+
+/*Start Navbar*/
+.navbar{
+    font-size: 21px;
+    font-weight: 400;
+}
+.navbar .navbar-brand{
+    font-weight: 100;
+}
+.navbar .logo{
+    font-family: cursive;
+    font-weight: bolder; 
+    font-size: 25px ; 
+}
+.navbar-light .navbar-nav .nav-item{
+    position: relative ;
+}
+.navbar-light .navbar-nav .nav-item::after{
+    content: "" ; 
+    position: absolute ; 
+    bottom: 5px ;  
+    left: 50% ; 
+    right: 50% ; 
+    height:2px; 
+    transition: .4s ; 
+}
+.navbar-light .navbar-nav .nav-item:hover::after{
+    left: 0px ; 
+    right: 0px ;
+}
+/*End Navbar*/
+
+/*Start Slider*/
+.slider{
+    background-color: black ;
+}
+.carousel-inner{
+    position: relative ; 
+    display: flex ; 
+    align-items: center ; 
+    
+}
+.carousel-inner .overlay{
+    position: absolute ; 
+    top: 0 ; 
+    left: 0px ; 
+    width: 100% ; 
+    height: 100% ; 
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5) ; 
+}
+.carousel-inner .carousel-item{
+    -webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%; 
+    -o-background-size: 100% 100%; 
+    background-size: 100% 100%; 
+}
+.carousel-inner .carousel-one{
+    background-image: url("https://via.placeholder.com/1366x1120/F00") ;
+}
+
+.carousel-inner .carousel-two{
+    background-image: url("https://via.placeholder.com/1366x1120/00F") ;
+}
+.carousel-inner .carousel-three{
+    background-image: url("https://via.placeholder.com/1366x1120/F0F") ; 
+}
+.carousel-inner h2{
+    position: absolute;
+    left: 100px;
+    left: 10px;
+    font-size: 70px;
+    z-index: 3;
+    color: #fff;
+    line-height: 1.6 ;
+}
+.carousel-inner h2 span{
+    display: inline-block ; 
+    background-color: red ;
+    padding: 6px 8px
+}
+.slider .carousel-control-prev,
+.slider .carousel-control-next{
+    z-index: 999 ; 
+}
+
+.slider .carousel-indicators li{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #e4dbdb;
+}
+/*End Slider*/
+/*Start features*/
+.features{
+ 
+}
+.features .row > div{
+    padding-top: 50px ;
+    padding-bottom: 50px ;  
+}
+.features .row > div h3{
+    margin-top: 12px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.features .row > div:hover > h3{
+    color: #FFF ; 
+}
+.features .row > div p{
+    font-size: 16px;
+    color: #bbb1b1;
+    font-weight: 300;
+}
+.features i{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    line-height: 100px;
+}
+
+/*End features*/
+/*Start Company*/
+.company{
+    padding: 40px 0px; 
+    background-color: #f0f5f7; 
+}
+.company h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.company div{
+    margin: 0px auto;
+    color: #948c8c;
+    line-height: 1.4;
+    text-align: center;
+}
+.company div:last-child{
+    margin-top: 20px;
+    justify-content: center ; 
+    display: flex ; 
+}
+.company div:last-child span{
+    background-color: red;
+    display: block;
+    width: 100px;
+    padding: 12px 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #FFF;
+}
+/*End Company*/
+
+/*Satrt Work*/
+.work{
+    padding: 40px 0px 0px; 
+}
+.work h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.work div{
+    margin: 0px auto;
+    color: #948c8c;
+    line-height: 1.4;
+}
+.work ul{
+    margin-bottom: 0px ;
+}
+.work ul li{
+    display: inline-block ;
+    margin-right: 10px ; 
+    padding: 0px 5px ;
+    transition: .5s ;
+    cursor: pointer ;
+    margin-bottom: 5px ; 
+}
+
+.work .active{ 
+    color: #FFF ; 
+}
+.work .row{
+    margin-top: 50px ; 
+}
+.work .row:last-child{
+    margin-top: 0px ; 
+}
+.work .row .col-sm{
+    background-size: 100% 100% ; 
+    padding: 0px ; 
+    margin: 0px ; 
+}
+.work .row .col-sm img{
+    width: 100% ; 
+}
+/*End Work*/
+/*Start Posts*/
+.posts{
+    margin-top: 50px ; 
+}
+.posts h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+.posts p{
+    color: #949292;
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 1.4 ; 
+    margin-bottom: 40px; 
+}
+
+.posts .row .card{
+    margin-bottom: 5px ; 
+    border: none ; 
+}
+.posts .row .card .card-body{
+    border-top: none;
+    margin-top: -5px;
+    background-color: #FFF;
+}
+/*End Posts*/
+/*Strart Testi*/
+/*
+.testi{
+    position: relative ; 
+    -webkit-background-size: 100% 100% ; 
+    -moz-background-size: 100% 100% ; 
+    background-size: 100% 100% ; 
+    background-image: url("../images/3.png") ;
+}
+.testi .overlay{
+    position: absolute ; 
+    top: 0 ; 
+    left: 0px ; 
+    width: 100% ; 
+    height: 100% ; 
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5) ; 
+}
+.testi .container{
+    position: relative ; 
+    z-index: 5 ;
+    width: 100% ; 
+}
+.testi .container .carousel-item{
+    width: 100% ; 
+}
+*/
+/*End Testi*/
+
+
+
+/*Start Pricing*/
+.price
+{
+    margin-top: 50px ; 
+}
+.price h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.price p{
+    color: #949292;
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 1.4 ; 
+    margin-bottom: 40px; 
+}
+.price .price-item{
+    box-shadow: 1px 1px 3px 1px;
+    background-color:#f7f7f7  ;
+    padding: 10px ;
+    margin-bottom: 10px ; 
+    transform: scale(1) ; 
+    transition: all 1s ease-in-out ; 
+}
+.price .price-item:hover{
+    transform: scale(1.1, 1.1) ; 
+}
+
+.price .price-item h4{
+    font-size: 28px;
+    font-weight: 600;
+}
+.price .price-item span:first-child{
+    margin-top: -13px;
+    display: block;
+}
+.price .price-item h3{
+    transition: .4s ;
+    padding: 8px;
+    font-weight: 600;
+}
+.price .price-item h3:hover{
+    color: #FFF;
+}
+.price .price-item ul{
+    margin-bottom: 10px ; 
+}
+.price .price-item ul li{
+    line-height: 2.6 ; 
+    cursor: pointer ; 
+}
+.price .price-item ul li:hover{
+    color: #afa0a0 ; 
+}
+.price .price-item ul li:nth-last-child(2){
+    margin-bottom: 15px ; 
+}
+/*End Pricing*/
+
+/*Start Choose*/
+.choose{
+    margin-top: 50px ; 
+}
+.choose .row{
+    margin: 0px ;
+}
+.choose .row .col-md-6{
+    overflow: hidden ; 
+    padding: 0px ; 
+}
+.choose .row > div:first-child img{
+    max-width: 100% ; 
+}
+.choose .row > div:last-child{
+    color: #FFF ;  
+    padding-left: 40px; 
+/*    padding-bottom: 40px; */
+}
+.choose .row > div:last-child p,
+.choose .row > div:last-child h2{
+    color:#c3aeae  ;
+    line-height: 1.4 ;
+    margin-top: 37px ; 
+}
+.choose .row > div:last-child h2{
+    font-weight: 600 ; 
+    font-size: 60px  ;
+    color: #FFF ; 
+}
+.choose .btn{
+    margin-bottom: 10px ; 
+}
+/*End Choose*/
+/*Start Stat*/
+
+.stat{
+      
+}
+.stat p{
+    margin-bottom: -8px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.stat span{
+    color:#c3aeae  ;
+}
+.stat .row > div{
+    padding:20px 0px ;
+}
+.stat .row > div:hover > p,
+.stat .row > div:hover > i{
+    color: #FFF ; 
+}
+/*End Stat*/
+/*Start Contact*/
+.contact{
+    background-color: red ;  
+    padding: 40px 0px ;
+    line-height: 48px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+.contact p{
+    margin-bottom: 0px ; 
+}
+.contact a{
+    color: #FFF ; 
+}
+/*End Contact*/
+/*Start Footer*/
+footer{
+    padding: 70px 0px ; 
+}
+footer h2{
+    margin-bottom: 20px; 
+}
+footer .navbar-brand{
+    color: #000 ; 
+    font-weight: 100;
+}
+footer .row > div{
+    margin-bottom: 20px; 
+}
+footer .row div:first-child .logo{
+    font-family: cursive;
+    font-weight: bolder; 
+    font-size: 25px ; 
+}
+footer .row div:first-child p{
+    margin-bottom: 0px;
+    line-height: 1.6;
+    color: #9a7a7a;
+}
+footer .row div:first-child span{
+    color: #000 ; 
+}
+footer ul li i{
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 700;
+}
+footer ul{
+    margin-bottom: 0px ; 
+}
+footer ul li:hover{
+    color: #ad9999 ; 
+}
+
+/*End Footer*/
+/*Start End*/
+.end{
+    padding: 20px 0px ; 
+    box-shadow: -1px -1px 2px 0px ; 
+    color: #FFF ; 
+}
+.end .row > div:last-child{
+    text-align: right ; 
+}
+.end .row > div:last-child ul{
+    margin: 0px ; 
+}
+.end .row > div:last-child ul li{
+    display: inline-block; 
+    cursor: pointer ; 
+}
+.end .row > div:last-child ul li:not(:last-child){
+    margin-right: 10px  ;
+}
+.end .row > div:last-child ul li i{
+    color: #FFF ; 
+}
+.end .row > div:last-child ul li:hover i{
+    color: #b3a7a7; 
+}
+/*End End*/
+/*Start Media Query*/
+@media( max-width: 576px ) {
+    .carousel-inner h2.h1{
+        font-size: 29px;
+        left: 15px;
+        top: 65px ; 
+    }
+    .uppernav .work-info{
+        text-align: left ; 
+    }
+    .navbar-light .navbar-nav .nav-item::after{
+        left: 0px ;
+        right: 100% ; 
+    }
+    .navbar-light .navbar-nav .nav-item:hover::after{ 
+        right: 70% ;
+    }
+    .end .row > div:last-child{
+        text-align: left ; 
+    }
+    .end ul li{
+        margin-top: 10px ; 
+    }
+
+    .work{
+        display: none ; 
+    }
+/*
+    .choose .btn{
+        margin-left: 96px ; 
+    }
+*/
+
+}
+/*End Mediaa Query*/
