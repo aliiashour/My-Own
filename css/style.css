@@ -159,14 +159,14 @@
     background-size: 100% 100%; 
 }
 .carousel-inner .carousel-one{
-    background-image: url("https://via.placeholder.com/1366x1120/F00") ;
+    background-image: url("../images/01.jpg") ;
 }
 
 .carousel-inner .carousel-two{
-    background-image: url("https://via.placeholder.com/1366x1120/00F") ;
+    background-image: url("../images/02.jpg") ;
 }
 .carousel-inner .carousel-three{
-    background-image: url("https://via.placeholder.com/1366x1120/F0F") ; 
+    background-image: url("../images/03.jpg") ; 
 }
 .carousel-inner h2{
     position: absolute;
