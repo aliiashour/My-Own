@@ -587,6 +587,9 @@ footer ul li:hover{
     .choose .row > div:last-child{
         padding-left: 10px ; 
     }
+    .load .spiner{
+        margin-top: 170px ; 
+    }
     .end .row > div:last-child{
         text-align: left ; 
     }
