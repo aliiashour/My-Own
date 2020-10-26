@@ -1,5 +1,13 @@
 $(function(){
     
+    // Before Loading The Website
+
+    $(window).on("load", function(){
+        $(".scrolltop").click() ;
+        $(".load").css("display", "none") ;
+    }) ; 
+
+
     // Start Navbar Links
     
     $(".navbar .navbar-nav .nav-item, .work li").click(function(){
