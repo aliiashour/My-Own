@@ -547,6 +547,9 @@ footer ul li:hover{
 .end .row > div:last-child{
     text-align: right ; 
 }
+.end span{
+    color: red ; 
+}
 .end .row > div:last-child ul{
     margin: 0px ; 
 }
